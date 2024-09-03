@@ -1,0 +1,86 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div>div>p {
+  position: absolute;
+  font-size: 24px;
+  width: 400px;
+  top: 50%;
+  /* 부모 요소의 bottom과 동일한 값 */
+  right: 50%;
+  transform: translate(50%, 30%);
+}
+
+body {
+  text-align: center;
+  margin: 50px;
+}
+
+.firstlow>.block,
+.secondlow>.block,
+.thirdboard>.block {
+  margin-bottom: 5px;
+}
+
+.subboard,
+.mainboard {
+  position: relative;
+  width: 550px;
+  height: 100px;
+}
+
+.stratPage,
+.container {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 550px;
+  height: 650px;
+  top: 100px;
+  left: 500px;
+}
+
+.subboard span {
+  font-size: 18px;
+  margin: 0 15px;
+}
+
+.gameborad {
+  width: 450px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 0;
+}
+
+.container .block {
+  position: relative;
+  border: 1px solid black;
+  width: 125px;
+  height: 125px;
+  border-radius: 8px;
+}
+
+.gameborad>div>p {
+  content: "x";
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.firstlow,
+.secondlow,
+.thirdboard {
+  display: inline-block;
+}
+
+.gameborad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
