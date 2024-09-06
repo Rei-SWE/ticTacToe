@@ -3,28 +3,59 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
   <title>Tic-Tac-Toe</title>
-  <link rel="stylesheet" href="index.css">
-  <script src="index.js" defer></script>
+  <meta name="description" content="My first toy project Tic-tac-toe">
+  <meta name="author" content="Rei" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- OG (Open Graph Data) -->
+  <meta property="og:title" content="레이의 틱택토 게임">
+  <meta property="og:type" content="webgame" />
+  <meta property="og:url" content="배포후 URL 작성 예정" />
+  <meta property="og:image" content="배포후 생성된 이미지 URL" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!--  Javascript -->
+  <Script src="main.js" defer></Script>
+   <!-- Font Awsome -->
+  <script src="https://kit.fontawesome.com/1dbbcdb86e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="container">
-    <div class="mainboard">
-      <P id="text">Click a square to strat the game</P>
+  <!-- Header -->
+  <header class="header">
+    <div class="header_box" >
+      <h1 class="header_title" >Tic-Tac-Toe</h1><br>
+      <button class="header_playbutton"><i class="fa-solid fa-play"></i> play</button>
     </div>
-    <div class="subboard">
-      <span class="match-time">⌛0</span>
-      <div class="strat-button"><button>➡️ Play </button></div>
+  </header>
+  <!-- Main -->
+  <main class="main">
+    <!-- Turn Indicator-->
+    <h2 class="main_indicator"> Your Trun</h2>
+    <!-- Game Status -->
+    <section class="main_status">
+      <i class="fa-regular fa-clock"></i><span class="status_time"> </span>
+    </section>
+    <!-- Game Board -->
+    <div class="board">
+      <div class="board_box box_hover"><span class="board_count"></span></div>
+      <div class="board_box box_hover"><span class="board_count"></span></div>
+      <div class="board_box box_hover"><span class="board_count"></span></div>
+      <div class="board_box box_hover"><span class="board_count"></span></div>
+      <div class="board_box box_hover"><span class="board_count"></span></div>
+      <div class="board_box box_hover"><span class="board_count"></span></div>
+      <div class="board_box box_hover"><span class="board_count"></span></div>
+      <div class="board_box box_hover"><span class="board_count"></span></div>
+      <div class="board_box box_hover"><span class="board_count"></span></div>
     </div>
-    <div class="gameborad">
-        </div>
-      </div>
-      <div class="bottom"></div>
-    </div>
-  </div>
-
+    <!-- Footer -->
+    <footer class="footer">
+      <button class="footer_button"><i class="fa-solid fa-repeat"> </i> Play again</button>
+    </footer>
+  </main>
 </body>
 
 </html>
